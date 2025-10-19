@@ -56,6 +56,7 @@ void tictactoe(int diff)
 						plays[bot_play] = 'o';
 						W = win(plays);
 						grid(plays);
+						printf("\n");
 					}
 				}
 			}
