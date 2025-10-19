@@ -5,6 +5,7 @@ int robot(char *plays,int diff)
 {
 	int i = 0;
 	int random_number;
+	// bot asked in TP
 	if(diff == 0)
 	{
 		while(i <= 8)
@@ -20,6 +21,7 @@ int robot(char *plays,int diff)
 		}
 		i = 0;
 	}
+	// random bot
 	else if(diff == 1)
 	{
 		while(i == 0)
@@ -33,10 +35,12 @@ int robot(char *plays,int diff)
 		}
 		i = 0;
 	}
+	//not done beatable hard bot
 	else if(diff == 2)
 	{
 
 	}
+	// not finished impossible-to-win bot
 	else if(diff == 3)
 	{
 		if (plays[9] == 1)

@@ -13,6 +13,7 @@ void tictactoe(int diff)
 	char term;
 	int current_play;
 	char *plays = malloc(11*sizeof(char));
+	//plays 10 = human move counter
 	plays[10] = '\0';
 	int i = 0;
 	while(i<=8)
@@ -26,6 +27,7 @@ void tictactoe(int diff)
 	while(W == 0)
 	{
 		printf("Choisissez où jouer :\n");
+		// letter block code don't work (l 31-36)
 		if(scanf("%d%c", &current_play, &term) != 2 || term != '\n')
 		{
 			printf("Coup invalide...\n");

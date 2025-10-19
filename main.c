@@ -9,7 +9,9 @@ void main()
     int diff = -1;
     while(v == 0)
     {
-        printf("Choisissez votre difficulté (entre 0 et 3):\n");
+		// should've been between 0 and 3 but last 2 bot were too difficult
+		// letter block code don't work (l 15-20)
+        printf("Choisissez votre difficulté (entre 0 et 1):\n");
         if(scanf("%d%c", &diff, &term) != 2 || term != '\n')
 	    {
 	    	printf("Choix inexistant...\n");
@@ -18,7 +20,7 @@ void main()
         }
 	    else
 	    {
-		    if(diff < 0 || diff > 3)
+		    if(diff < 0 || diff > 1)
 		    {
 		    	printf("Choix inexistant...\n");
 		    }
