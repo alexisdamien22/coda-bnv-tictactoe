@@ -12,14 +12,15 @@ void tictactoe(int diff)
 	int W = 0;
 	char term;
 	int current_play;
-	char *plays = malloc(10*sizeof(char));
-	plays[9] = '\0';
+	char *plays = malloc(11*sizeof(char));
+	plays[10] = '\0';
 	int i = 0;
 	while(i<=8)
 	{
 		plays[i]=' ';
 		i++;
 	}
+	plays[9] = 0
 	system("clear");
 	grid(plays);
 	while(W == 0)
@@ -46,6 +47,7 @@ void tictactoe(int diff)
 				else
 				{
 					plays[current_play]='x';
+					plays[10]++;
 					system("clear");
 					grid(plays);
 					W = win(plays);
