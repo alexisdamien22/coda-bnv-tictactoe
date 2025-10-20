@@ -21,7 +21,7 @@ void tictactoe(int diff)
 		plays[i]=' ';
 		i++;
 	}
-	plays[9] = 0
+	plays[9] = 0;
 	system("clear");
 	grid(plays);
 	while(W == 0)
